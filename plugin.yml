@@ -1,0 +1,22 @@
+name: LobbyPlugin
+version: '1.0'
+main: me.ssgbreakers.lobby.LobbyPlugin
+description: Custom Lobby Plugin
+author: SSG BREAKERS
+api-version: '26.1'
+
+commands:
+  lobby:
+    description: Teleport to the lobby
+    usage: /lobby
+
+  setlobby:
+    description: Set the lobby at your current location
+    usage: /setlobby
+    permission: lobby.set
+
+permissions:
+  lobby.set:
+    description: Allows the player to set the lobby
+    default: op
+
